@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background-color: #87ceeb;
+  overflow: hidden;
+}
+
+.scene {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.road {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #333;
+}
+
+/* Traffic Light */
+.traffic-pole {
+  position: absolute;
+  left: 250px;
+  bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.traffic-light {
+  width: 70px;
+  background: #222;
+  padding: 10px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.light {
+  width: 40px;
+  height: 40px;
+  margin: 8px auto;
+  background: #111;
+  border-radius: 50%;
+  transition: background 0.5s;
+}
+
+.light.red.active {
+  background: red;
+}
+.light.yellow.active {
+  background: yellow;
+}
+.light.green.active {
+  background: green;
+}
+
+.pole {
+  width: 10px;
+  height: 200px;
+  background: #555;
+}
+
+
+
+/* Vehicles */
+.vehicle {
+  position: absolute;
+  bottom: 110px;
+  transition: left 1s linear;
+}
+
+
+.bike {
+  bottom: 140px;
+  left: -500px;
+  width: 320px;
+}
+.scooter {
+  bottom: 150px;
+  left: -800px;
+  width: 200px;
+}
