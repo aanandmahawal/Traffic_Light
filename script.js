@@ -1,4 +1,4 @@
-const lights = document.querySelectorAll('.light');
+const lights = document.querySelectorAll('.light')
 const bike = document.querySelector('.bike')
 const scooter = document.querySelector('.scooter')
 
@@ -59,5 +59,6 @@ function moveVehicles() {
 setInterval(updateLights, 3000);
 updateLights();
 setInterval(moveVehicles, 50);
+
 
 
